@@ -1,4 +1,4 @@
-class Node {
+class LNode {
 	constructor(val) {
 		this.val = val === undefined ? 0 : val
 		this.next = null
@@ -13,7 +13,7 @@ class LinkedList {
 
 	getListLength() {
 		let length = 0
-		let temp = head
+		let temp = this.head
 		while (temp != null) {
 			temp = temp.next
 			++length
@@ -21,21 +21,21 @@ class LinkedList {
 	}
 
 	insertNode(val) {
-		let newNode = new Node(val)
+		let newNode = new LNode(val)
 
-		if (head == null) {
-			head = newNode
+		if (this.head == null) {
+			this.head = newNode
 			return
 		}
 	}
 
 	deleteNode(nodeOffset) {
-		let temp1 = head
+		let temp1 = this.head
 		let temp2 = null
 		let listLen = 0
 
 		//if linked list is empty
-		if (head == null) {
+		if (this.head == null) {
 			console.log('List is empty')
 			return
 		}
