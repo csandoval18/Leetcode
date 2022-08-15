@@ -4,9 +4,9 @@ const palindrome = (x) => {
 	} else if (x < 10) {
 		return true
 	}
-
 	//turn x into array
 	let arr = Array.from(String(x), Number)
+	console.log(arr)
 	let len = arr.length
 	let r = len - 1
 
@@ -20,6 +20,5 @@ const palindrome = (x) => {
 	return true
 }
 
-// let x = 1001
-// console.log(palindrome(x))
-// console.log('hello world')
+let x = 1001
+console.log(palindrome(x))
