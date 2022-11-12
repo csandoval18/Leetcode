@@ -1,8 +1,14 @@
-import './Data Structures/LinkedList'
+function ListNode(val, next) {
+  this.val = (val===undefined ? 0 : val)
+  this.next = (next===undefined ? null : next)
+}
 
 const mergeTwoLists = (headA, headB) => {
+  console.log('start')
 	let dummyNode = new ListNode(0)
+  console.log(dummyNode)
 	let tail = dummyNode
+  console.log("tail",tail)
 	while (true) {
 		if (headA === null) {
 			tail.next = headB
@@ -25,3 +31,5 @@ const mergeTwoLists = (headA, headB) => {
 	}
 	return dummyNode.next
 }
+
+console.log(mergeTwoLists(list1, list2))
