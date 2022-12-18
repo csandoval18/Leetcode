@@ -3,7 +3,7 @@
 // 	this.next = next === undefined ? null : next
 // }
 
-import { ListNode } from "./DS/LinkedList"
+import { ListNode } from "./DS/LinkedList.js"
 
 const mergeTwoLists = (headA, headB) => {
 	let dummyNode = new ListNode(0)
