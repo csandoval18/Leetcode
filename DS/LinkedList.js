@@ -1,16 +1,6 @@
-function ListNode(val, next) {
+export function ListNode(val, next) {
 	this.val = val === undefined ? 0 : val
 	this.next = next === undefined ? null : next
-}
-
-export const createLinkedList = (arr) => {
-	let linkedlist = new ListNode(arr[arr.length - 1])
-	let next = linkedlist
-	for (let i = 1; i < arr.length; ++i) {
-		let tmp = new ListNode(arr[arr.length - 1 - i], next)
-		next = tmp
-	}
-	return linkedlist
 }
 
 const convertToLinkedList = (arr) => {
@@ -20,24 +10,6 @@ const convertToLinkedList = (arr) => {
 		dummyNode = dummyNode.next
 	}
 	return dummyNode.next
-}
-
-export const printLinkedList = (head) => {
-	while (head !== null) {
-		console.log(head.val)
-		head = head.next
-	}
-}
-
-const arr1 = [1, 2, 3, 4]
-let a = convertToLinkedList(arr1)
-printLinkedList(a)
-
-const arr = [1, 2, 4]
-console.log(createLinkedList(arr))
-export function ListNode(val, next) {
-	this.val = val === undefined ? 0 : val
-	this.next = next === undefined ? null : next
 }
 
 export const arrToLinkedList = (arr) => {
@@ -50,9 +22,9 @@ export const arrToLinkedList = (arr) => {
 	return tmp
 }
 
-const arr1 = [1, 2, 3, 4]
-let a = convertToLinkedList(arr1)
-printLinkedList(a)
-
-const arr = [1, 2, 4]
-console.log(createLinkedList(arr))
+export const printLinkedList = (head) => {
+	while (head !== null) {
+		console.log(head.val)
+		head = head.next
+	}
+}
