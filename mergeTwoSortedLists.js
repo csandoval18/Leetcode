@@ -1,10 +1,13 @@
-import { ListNode, arrToLinkedList } from "./DS/LinkedList"
+// function ListNode(val, next) {
+// 	this.val = val === undefined ? 0 : val
+// 	this.next = next === undefined ? null : next
+// }
+
+import { ListNode } from "./DS/LinkedList"
 
 const mergeTwoLists = (headA, headB) => {
 	let dummyNode = new ListNode(0)
-	console.log(dummyNode)
 	let tail = dummyNode
-	console.log("tail", tail)
 	while (true) {
 		if (headA === null) {
 			tail.next = headB
@@ -28,4 +31,3 @@ const mergeTwoLists = (headA, headB) => {
 
 let list1 = [1, 2, 4]
 let list2 = [1, 3, 4]
-for (let i = 0; i < 2; ++i) {}

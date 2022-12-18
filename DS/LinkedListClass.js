@@ -31,28 +31,13 @@ class LinkedList {
 
 		//if linked list is empty
 		if (this.head == null) {
-			console.log('List is empty')
+			console.log("List is empty")
 			return
 		}
 	}
 }
-// const addTwoNumbers = (l1, l2) => {}
+const addTwoNumbers = (l1, l2) => {}
 
-// let arr1 = [2, 4, 3] //342
-// let arr2 = [5, 6, 4] //465
-// //output [7,0,8]
-
-// console.log(arr1.length)
-
-// const printLinkedList = (list) => {
-// 	let temp = list
-// 	while (temp.next != null) {
-// 		console.log(list.val)
-// 		temp = temp.next
-// 	}
-// }
-
-// let ll1 = convert2LinkedList(arr1)
-// convert2LinkedList(arr2)
-
-// printLinkedList(ll1)
+let arr1 = [2, 4, 3] //342
+let arr2 = [5, 6, 4] //465
+//output [7,0,8]
