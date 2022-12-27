@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const addBinary = (a, b) => {
 	let re = 1
 	let ans = "",
@@ -11,3 +12,6 @@ const addBinary = (a, b) => {
 		}
 	}
 }
+=======
+const addBinary = (a, b) => {}
+>>>>>>> 41d1c53c009664b69393cbde9d1185f2593cfb06
