@@ -1,17 +1,23 @@
-<<<<<<< HEAD
 const addBinary = (a, b) => {
-	let re = 1
-	let ans = "",
-		aLength = a.length,
-    bLength = b.length
-	while (re) {
-    if ()
-		if (a[a.length - 1] === "1" && b[b.length] === "1") {
-			ans = "1" + ans
-		} else {
-		}
+	let carry = 0,
+		lenA = a.length,
+		lenB = b.length,
+		max = Math.max(lenA, lenB),
+		num = 0,
+		ans = ""
+	for (let i = 0; i < max; ++i) {
+		num =
+			Number(a[lenA - 1 - i] || 0) +
+			Number(b[lenB - 1 - i] || 0) +
+			carry
+		carry = Math.floor(num / 2)
+		// ans = carry + ans
+		ans = (num % 2) + ans
 	}
+	if (carry) ans = "1" + ans
+	return ans
 }
-=======
-const addBinary = (a, b) => {}
->>>>>>> 41d1c53c009664b69393cbde9d1185f2593cfb06
+
+let x = "abcd"
+//ending range is not iinclusive so it returns indexes 0 and 1
+console.log(x.slice(0, 2))
