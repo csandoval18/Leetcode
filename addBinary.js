@@ -1,4 +1,4 @@
-const addBinary = (a, b) => {
+const addBinary2 = (a, b) => {
 	let carry = 0,
 		lenA = a.length,
 		lenB = b.length,
@@ -10,10 +10,12 @@ const addBinary = (a, b) => {
 			Number(a[lenA - 1 - i] || 0) +
 			Number(b[lenB - 1 - i] || 0) +
 			carry
+		// determines if carry is 1 or 0
 		carry = Math.floor(num / 2)
-		// ans = carry + ans
+		// 0 & 2 will add 0 to res and 1 and 3 will add a 1
 		ans = (num % 2) + ans
 	}
+	// if carry stays at one at end of loop a 1 has to be added at end of res str
 	if (carry) ans = "1" + ans
 	return ans
 }
