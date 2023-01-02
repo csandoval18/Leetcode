@@ -8,7 +8,13 @@ const mySqrt = (x) => {
 
 //49 4 + 9 = 13 + 1 / 2
 
-const sqrt = (x) => {}
+const sqrt = (x) => {
+	let ans = 0
+	for (let i = 0; i * i <= x; ++i) {
+		ans = i
+	}
+	return ans
+}
 
 let b = 49
 console.log(sqrt(b))
