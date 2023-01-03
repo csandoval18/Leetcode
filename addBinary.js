@@ -19,7 +19,3 @@ const addBinary2 = (a, b) => {
 	if (carry) ans = "1" + ans
 	return ans
 }
-
-let x = "abcd"
-//ending range is not iinclusive so it returns indexes 0 and 1
-console.log(x.slice(0, 2))
