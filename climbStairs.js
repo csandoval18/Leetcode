@@ -9,9 +9,3 @@ const climbStairs = (n) => {
 	}
 	return a
 }
-
-class MyClass {
-	constructor() {
-		this.data = []
-	}
-}
